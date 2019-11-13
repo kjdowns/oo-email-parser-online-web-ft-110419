@@ -13,7 +13,7 @@ class EmailAddressParser
   end
 
   def parse
-    self.parsed_emails = self.raw_email_csv.split(self.delimiter).reject
+    self.parsed_emails = self.raw_email_csv.split(self.delimiter).reject {|string| string}
   end
 
 end
