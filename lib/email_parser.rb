@@ -9,7 +9,7 @@ class EmailAddressParser
   
   def initialize(email_csv)
     self.raw_email_csv = email_csv
-    self.delimiter = /\s|,/
+    self.delimiter = /[\s,]/
   end
 
   def parse
