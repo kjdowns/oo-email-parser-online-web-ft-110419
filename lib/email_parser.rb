@@ -5,10 +5,11 @@
 
 class EmailAddressParser
 
-  attr_accessor :raw_email_csv, :parsed_emails
+  attr_accessor :raw_email_csv, :parsed_emails, :delimiter
   
   def initialize(email_csv)
     self.raw_email_csv = email_csv
+    self.delimiter = /[\s]/
   end
 
   def parse
