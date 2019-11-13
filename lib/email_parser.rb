@@ -7,12 +7,8 @@ class EmailAddressParser
 
   attr_accessor :email_addresses
 
-  def initialize(email_csv)
-    self.email_addresses = email_csv
-  end
-
   def parse
-  
+    
   end
 
 end
